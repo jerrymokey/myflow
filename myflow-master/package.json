@@ -1,9 +1,9 @@
 {
   "name": "myflow",
   "version": "1.0.0",
-  "author": "xuhang <531792740@qq.com>",
+  "author": "Jerry <wjerry65535@163.com>",
   "scripts": {
-    "start": "http-server -p 9090 -o"
+    "start": "http-server -p 80 -o"
   },
   "engines": {
     "node": ">=6.3.1"
