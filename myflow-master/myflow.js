@@ -102,7 +102,7 @@
             props: {
                 text: {
                     name: 'text',
-                    label: '显示',
+                    label: '描述',
                     value: '',
                     editor: function () {
                         return new myflow.editors.textEditor();
