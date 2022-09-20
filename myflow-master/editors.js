@@ -248,6 +248,7 @@
         //获取参数列表
         getParamMap: function () {
             var _props, _k, _div, _src, _r;
+            var paramMap = [];
             this.init = function (props, k, div, src, r) {
 
                 _props = props;
@@ -265,17 +266,19 @@
                 $('#' + _div).data('editor', this);
             };
             this.destroy = function () {
-                $('#' + _div + ' input').each(function () {
               /*      var paramMap = [];
                     for (var idx = 0;idx<_props["paramSum"].value;idx++){
                         paramMap.push({key: document.getElementById('#paramKey0').value, name: document.getElementById('#paramValue0').value});
                     }
                     console.log(paramMap);
                     _props[_k].value = paramMap;*/
-                    $('#' + _div + ' input').each(function () {
-                        _props[_k].value = $(this).val();
-                    });
-                });
+            /*    $('#' + _div + ' input').each(function () {
+                        paramMap.push($(this).val());
+                    });*/
+                for (var idx=0;idx<_props["paramSum"].value;idx++){
+                    paramMap.push(key="",value="");
+                }
+                _props[_k].value = paramMap;
             };
         }
     });
